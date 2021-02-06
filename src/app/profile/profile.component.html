@@ -1,1 +1,72 @@
-<p>profile works!</p>
+<div class="container">
+
+    <app-form (searchProf)='searchUser($event)'></app-form>
+    <hr>
+
+    <div class="row">
+        <div class="col-sm">
+            <div class=" testimonial-card">
+
+                <div class="avatar pt-3" style="z-index:4;">
+                    <img src="{{userProfile.avatar_url}}" class="width-full border bg-white" alt="woman avatar"
+                        style="height:auto;" alt width="260" height="260">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class=" testimonial-card">
+
+                <div class="card-body">
+                    <h4 class="card-title">{{userProfile.login}}</h4>
+                    <hr>
+                    <p>{{userProfile.bio}}</p>
+                    <div class="row">
+                        <div class="col-sm">
+                            {{userProfile.followers}}<p>followers</p>
+                        </div>
+                        <div class="col-sm">
+                            {{userProfile.following}}<p>following</p>
+                        </div>
+                    </div>
+                    {{userProfile.location}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="text-center">Repositories</h3>
+
+    <div class="row" *ngFor='let repo of userRepo'>
+        <div class="col pt-3">
+            <div class="card card-cascade wider reverse mt-3 repo">
+                <div class="card-body card-body-cascade text-center" appOnHover>
+                    <h4 class="card-title"><strong>{{repo.name}}</strong></h4>
+                    <p class="">{{repo.description}}</p>
+                    <span class="row ml-5 h4">Language:<p class="pl-3 red-text">{{repo.language}}</p></span>
+                    <button type="button" class="btn btn-secondary">
+                        <a target="_blank" class="text-white" href="{{repo.html_url}}">
+                            View Project
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Merienda:wght@400;700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Merienda', cursive;
+    overflow-x: hidden;
+}
+h4{
+    font-size: 40px;
+    font-family: "Charm", cursive;
+}    
+</style>
