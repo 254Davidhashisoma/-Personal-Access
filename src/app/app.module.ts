@@ -7,6 +7,7 @@ import { AboutComponent } from './about/about.component';
 import { NavComponent } from './nav/nav.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ProfileComponent } from './profile/profile.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ProfileComponent } from './profile/profile.component';
     AboutComponent,
     NavComponent,
     NotFoundComponent,
-    ProfileComponent
+    ProfileComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
