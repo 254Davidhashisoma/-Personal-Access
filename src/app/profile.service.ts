@@ -13,7 +13,7 @@ export class ProfileService {
 
   userProfile: User
 
-  userRepo: Repositories
+  userRepo!: Repositories;
 
   // apiUrl = environment.API_URL;
   // apiKey = environment.API_KEY;
@@ -23,7 +23,7 @@ export class ProfileService {
 
   }
 
-  searchUser(user) {
+  searchUser(user: any) {
     interface Responsee {
       login: string,
       avatar_url: string,

@@ -1,18 +1,17 @@
-import { NotFoundComponent } from './not-found/not-found.component';
-import { AboutComponent } from './about/about.component';
-import { NgModule, Component } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { ProfileComponent } from '../app/about/about.component'
-import { AboutComponent } from '../app/AboutComponent.Component'
-import { NotFoundComponent } from '..app/not-found/not-not-found.Component'
-import { from } from 'rxjs';
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { ProfileComponent } from '../app/profile/profile.component'
+import { AboutComponent } from '../app/about/about.component'
+import { NotFoundComponent } from '../app/not-found/not-found.component'
 
 const routes: Routes = [
-   { path: 'profile', Component: ProfileComponent },
-   { path: 'about', Component: AboutComponent },
-   { path  '', redirectTo: "/profile", pathmatch: "full"} 
-   { path : '**' Component: NotFoundComponent },
-  ];
+  { path: 'profile', component: ProfileComponent },
+  { path: 'about', component: AboutComponent },
+
+  { path: '', redirectTo: "/profile", pathMatch: "full" },
+
+  { path: '**', component: NotFoundComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
