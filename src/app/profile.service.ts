@@ -37,7 +37,7 @@ export class ProfileService {
     }
 
     let baseUrl = environment.API_URL + user + '?access_token=' + environment.API_KEY;
-    let promise = new Promise((resolve, reject) => {
+    let promise = new Promise<void>((resolve, reject) => {
       this.http.get<Responsee>(baseUrl).toPromise().then(res => {
         this.userProfile = res;
         //console.log(res);
