@@ -8,20 +8,20 @@
   width: 100%;
 }
 
-.card:not(.highlight-card) {
+/* .card:not(.highlight-card) {
   height: 16px;
   margin: 8px 0;
-}
+} */
 
 .card.highlight-card span {
   margin-left: 72px;
 }
 
-svg#rocket-smoke {
+/* svg#rocket-smoke {
   right: 120px;
   transform: rotate(-5deg);
 }
-}
+} */
 
 @media screen and (max-width: 575px) {
 svg#rocket-smoke {
@@ -59,6 +59,7 @@ svg#rocket-smoke {
         width: auto;
         min-width: 30%;
         position: relative;
+        /* align-items: center; */
     }
 
     .card.card.highlight-card span {
@@ -67,8 +68,8 @@ svg#rocket-smoke {
 
     .card {
         border-radius: 4px;
-        border: 1px solid #eee;
-        background-color: #fafafa;
+        border: 1px solid rgba(166, 177, 187, 0.911);
+        background-color: #a0b2cf;
         height: 40px;
         width: 200px;
         margin: 0 8px 16px;
@@ -79,6 +80,8 @@ svg#rocket-smoke {
         align-items: center;
         transition: all 0.2s ease-in-out;
         line-height: 24px;
+        margin-right: -220;
+        margin: auto;
     }
 
 
@@ -89,6 +92,7 @@ svg#rocket-smoke {
     body {
         font-family: 'Merienda', cursive;
         overflow-x: hidden;
+        margin-bottom: 3em;
     }
 
     h4 {
@@ -154,12 +158,7 @@ svg#rocket-smoke {
 
             <span>Build for Production</span>
         </div>
-    </div>
-    <ul>
-        <li>TypeScript</li>
-        <li>Html</li>
-        <li>Styled using CSS and Bootstrap</li>
-    </ul>
+   
 
     <p>Well,building this has been super Awesome,&#128512; getting to learn the new language and consuming APIs</p>
     <p>Planning to expand it in future</p>
