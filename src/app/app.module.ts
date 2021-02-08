@@ -1,30 +1,40 @@
-import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ProfileComponent } from './profile/profile.component';
+
+import { HttpClientModule } from '@angular/common/http';
+import { FormComponent } from './form/form.component';
+
+import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './about/about.component';
 import { NavComponent } from './nav/nav.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { ProfileComponent } from './profile/profile.component';
-import { FormComponent } from './form/form.component';
-import { FormsModule } from '@angular/forms'
+import { DateDirective } from './date.directive';
+import { OnHoverDirective } from './on-hover.directive';
+// import { OnHoverDirective } from './on-hover.directive';
+// import { DateDirective } from './date.directive';
+
 
 @NgModule({
   declarations: [
     AppComponent,
+    ProfileComponent,
+    FormComponent,
     AboutComponent,
     NavComponent,
     NotFoundComponent,
-    ProfileComponent,
-    FormComponent
+    DateDirective,
+    OnHoverDirective,
+    
   ],
   imports: [
     BrowserModule,
-    FormsModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -51,7 +51,7 @@ export class ProfileService {
     return promise
   }
 
-  displayRepos(user) {
+  displayRepos(user: string) {
     interface apiResponse {
       name: string,
       description: string,
@@ -61,7 +61,7 @@ export class ProfileService {
     }
 
     let url = environment.API_URL + user + '/repos' + '?access_token=' + environment.API_KEY;
-    let promise = new Promise((resolve, reject) => {
+    let promise = new Promise<void>((resolve, reject) => {
       this.http.get<apiResponse>(url).toPromise().then(response => {
         this.userRepo = response;
         resolve()
