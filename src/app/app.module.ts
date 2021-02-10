@@ -14,6 +14,7 @@ import { NavComponent } from './nav/nav.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { DateDirective } from './date.directive';
 import { OnHoverDirective } from './on-hover.directive';
+// import { TestingComponent } from './testing/testing.component';
 // import { OnHoverDirective } from './on-hover.directive';
 // import { DateDirective } from './date.directive';
 
@@ -28,6 +29,7 @@ import { OnHoverDirective } from './on-hover.directive';
     NotFoundComponent,
     DateDirective,
     OnHoverDirective,
+    // TestingComponent,
     
   ],
   imports: [

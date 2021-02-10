@@ -8,15 +8,16 @@ import { User } from '../searchClasses/user';
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.css']
+  // styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
 
-  userProfile!: User
-  userRepo!: Repositories;
+  userProfile!: User;
+  userRepo!: any;
+  userinClass: any;
 
   constructor(private profileService: ProfileService) {
-    //this.userinClass = new User("", "", 0, 0, "", "", "", "")
+    // this.userinClass = new User("", "", 0, 0, "", "", "", "")?
   }
 
   searchUser(user: string) {
