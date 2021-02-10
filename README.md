@@ -26,7 +26,7 @@ A website where users may enter a GitHub username into a form, submit it, and se
 
 ## Live Application
 
-You can view the live application using this [link](https://dorcastoto.github.io/GitSearch/) hosted by Github
+You can view the live application using this [link](https://254Davidhashisoma.github.io/-Project-Access) hosted by Github
 
 ## Development server
 
