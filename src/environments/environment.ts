@@ -4,6 +4,6 @@
 
 export const environment = {
   production: false,
-  API_KEY :'a44323cf78887acbc29ca933f9a0389dafa890b3',
+  API_KEY :'174998886e23f757455a39fb4d20a8a7c4267de4',
   API_URL:'https://api.github.com/users/'
 };
