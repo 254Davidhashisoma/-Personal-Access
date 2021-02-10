@@ -26,7 +26,7 @@ A website where users may enter a GitHub username into a form, submit it, and se
 
 ## Live Application
 
-You can view the live application using this [link](https://dorcastoto.github.io/GitSearch/) hosted by Github
+You can view the live application using this [link](https://254Davidhashisoma.github.io/-Project-Access) hosted by Github
 
 ## Development server
 
@@ -62,4 +62,3 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
