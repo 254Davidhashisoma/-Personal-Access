@@ -1,3 +1,4 @@
+// import { Repositories } from './searchClasses/repositories';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -14,7 +15,7 @@ import { NavComponent } from './nav/nav.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { DateDirective } from './date.directive';
 import { OnHoverDirective } from './on-hover.directive';
-// import { TestingComponent } from './testing/testing.component';
+// import { Repositories } from './searchClasses/repositories'
 // import { OnHoverDirective } from './on-hover.directive';
 // import { DateDirective } from './date.directive';
 
@@ -29,13 +30,14 @@ import { OnHoverDirective } from './on-hover.directive';
     NotFoundComponent,
     DateDirective,
     OnHoverDirective,
-    // TestingComponent,
+    // Repositories
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    // Repositories,
     FormsModule
   ],
   providers: [],
