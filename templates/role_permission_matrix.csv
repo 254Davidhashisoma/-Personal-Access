@@ -1,0 +1,8 @@
+Role,Module,Permission,Scope,Notes
+Receptionist,Patient Management,Create/Edit,Own Department,
+Receptionist,Appointments,Create/Edit,Own Department,
+Nurse,Nurse Station,View/Create/Edit,Assigned Patients,
+Doctor,Doctor Portal,View/Sign Orders/Results,Assigned Patients,
+Finance,Financial Management,Create/Approve/Report,Org,
+Procurement,Inventory/Procurement,Create/Approve,Org,
+Admin,All,Full,Org,

@@ -1,0 +1,6 @@
+Folder,Subfolder,DocumentType,Classification,RetentionYears,AccessRole
+Clinical,Orders,Order PDF,PHI,7,Clinicians
+Clinical,Results,Report PDF,PHI,7,Clinicians
+Finance,Invoices,AR Invoice,Confidential,7,Finance
+Finance,POs,Purchase Order,Confidential,7,Procurement
+HR,Employees,Contract,Confidential,7,HR

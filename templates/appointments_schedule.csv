@@ -1,0 +1,1 @@
+Department,ProviderID,ProviderName,Location,Room,DayOfWeek,StartTime,EndTime,SlotMinutes,BufferMinutes,OverbookAllowed,MaxOverbooks
